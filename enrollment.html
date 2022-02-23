@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="enrollment.css">
+    <script src="https://kit.fontawesome.com/0f18e3a961.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <h3><i class='fas fa-user-graduate' style='font-size:36px'></i>Enrollment Form<i class='fas fa-user-graduate' style='font-size:36px'></i></h3>
+        </div>
+
+    </header>
+
+    <div class="split left">
+        <div class="centered">
+            <form class="form">
+                <fieldset>
+                    <div>
+                        <label>Name:</label>
+                        <input class="lab" type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input class="lab" type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label>Education:</label>
+                        <input class="lab" type="text" name="education" id="education" required>
+                    </div>
+                    <div>
+                        <label>Age:</label>
+                        <input class="lab" type="text" name="age" id="age" required>
+                    </div>
+                    <div class="checks">
+                        <label>Gender:</label>
+                        <input type="checkbox" id="gender2" value="Male"><label><i class="fa fa-male" style="font-size:24px"></i></label>
+                        <input type="checkbox" id="gender1" value="Female"><label><i class="fa fa-female" style="font-size:24px"></i></label>
+                        
+                    </div>
+                    <div>
+
+                        <input type="button" name="button" id="btn" value="Submit" onclick="AddRow()">
+                      
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+            <table id="show">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Education</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+
+
+
+
+
+        <script src="enrollment.js"></script>
+        
+</body>
+
+</html>
